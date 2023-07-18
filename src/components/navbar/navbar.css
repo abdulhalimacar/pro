@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #171b20;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar a {
+  color: #ace0f9;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
+  transition: all 2s;
+}
+.navbar a:hover {
+  background-color: #ace0f9;
+  color: #171b20;
+}
+
+@media screen and (min-width: 0px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 576px) {
+  .navbar {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=navbar.css.map */

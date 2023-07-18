@@ -1,0 +1,15 @@
+@import "./scss/reset.scss", "./scss/variables.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');//google fontlardan import ettik
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Hubballi&display=swap');
+
+
+body{
+    background-color: $backcolor;
+    font-family: 'Amatic SC', cursive;
+}
+
+p{
+    font-family: 'Hubballi', cursive;
+}

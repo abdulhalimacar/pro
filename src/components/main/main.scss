@@ -1,0 +1,61 @@
+@import "../../scss/variables.scss";
+
+.card-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .cards{
+        background-color:$backcolor;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 3px 3px 5px green;
+        overflow: hidden;
+
+        &:hover .card-over{//cardın hoverına geldiğim zaman card-overı değiştir dedik burada...
+            transform: translateY(0);
+
+        }
+    }
+
+    .title{
+        color:black;
+        font-family: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    img{
+    width:500px;
+    height:350px;
+    object-fit: cover;
+    // filter: grayscale(0);//bu zaten default değeridir...
+
+      &:hover{
+        filter: grayscale(100%);
+    }
+    }
+
+
+  .card-over{
+
+   color: white;
+   position: absolute;//position absolute yapınca kontrolden çıkıyor yazı..position kullanılırsa mutlaka bottom vesaire kullanılır//bu kod kapsayıcı dive göre şekil alır gidip baktığımızda bunun kapsayıcı divi: cards oluyor, eğer gidip cards'a position:relative verirsek bu iş olur 
+   bottom: 0;
+   left: 0;
+   font-size: 1.5rem;
+   background-color: rgba(0,0,0,0.5);
+   padding: 1rem;
+   transform: translateY(100%);
+   z-index: 1;//position kullandığımız zaman z-index kullanılabilir zindex:1 yukarı doğru çıkartır
+   transition: transform 1s ease-in-out;
+
+    }
+
+}
+
+
+
